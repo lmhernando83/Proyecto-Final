@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+
+  <header class="site__header">
+    <div class="brand">
+      <a href="#">Logo</a>
+    </div>
+    <div class="logs">
+      <div class="logs__register">
+        <button type="button" class="btn logs__btn--register" data-target="#registerUser" aria-expanded="false" aria-label="register">Register</button>
+      </div>
+      <div class="logs__login">
+        <button type="button" class="btn logs__btn--login" data-target="#logIn" aria-expanded="false" aria-label="login">Login</button>
+      </div>
+      <div class="logs__menu">
+        <button type="button" class="btn logs__btn--menu" data-target="#mainMenu" aria-expanded="false" aria-label="main-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="navbar" id="mainMenu">
+      <button type="button" class="close">&times;</button>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav>
+    <div class="register" id="registerUser">
+      <a role="button" href="#">Back</a>
+      <form action="" class="register__form">
+        <div>
+          <label for="name" class="register__label">Name</label>
+          <input type="text" id="name" class="register__input">
+        </div>
+        <div>
+          <label for="r-user" class="register__label">User</label>
+          <input type="text" id="r-user" class="register__input">
+        </div>
+        <div>
+          <label for="r-password" class="register__label">Password</label>
+          <input type="password" id="r-password" class="register__input">
+        </div>
+        <div>
+          <button type="submit" class="register__btn">Register</button>
+        </div>
+      </form>
+    </div>
+    <div class="login" id="logIn">
+      <a role="button" href="#">Back</a>
+      <form action="" class="login__form">
+        <div>
+          <label for="l-user" class="login__label">User</label>
+          <input type="text" id="l-user" class="login__input">
+        </div>
+        <div>
+          <label for="l-password" class="login__label">Password</label>
+          <input type="password" id="l-password" class="login__input">
+        </div>
+        <div>
+          <button type="submit" class="login__btn">Login</button>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section class="intro">
+        <h1 class="intro__heading">Titulo</h1>
+        <div class="col">
+          <img class="intro__img" src="" alt="">
+        </div>
+        <div class="col">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam ratione inventore, officiis est ab harum molestiae sunt iure placeat omnis voluptatem minima repudiandae tempora! Ab, deleniti culpa. Consectetur dolorum, sapiente, omnis error perferendis perspiciatis blanditiis vel porro quae maxime tenetur mollitia ipsam aspernatur incidunt praesentium commodi! Hic, provident optio.</p>
+        </div>
+      </section>
+
+      <section class="method">
+        <h2 class="method__heading">Titulo</h2>
+        <div class="col">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam ratione inventore, officiis est ab harum molestiae sunt iure placeat omnis voluptatem minima repudiandae tempora! Ab, deleniti culpa. Consectetur dolorum, sapiente, omnis error perferendis perspiciatis blanditiis vel porro quae maxime tenetur mollitia ipsam aspernatur incidunt praesentium commodi! Hic, provident optio.</p>
+        </div>
+        <div class="col">
+          <img class="method__img" src="" alt="">
+        </div>
+      </section>
+
+      <section class="showcase">
+        <h2 class="showcase__heading">Titulo</h2>
+        <div class="col">
+          <img class="chowcase__img" src="" alt="">
+        </div>
+        <div class="col">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam ratione inventore, officiis est ab harum molestiae sunt iure placeat omnis voluptatem minima repudiandae tempora! Ab, deleniti culpa. Consectetur dolorum, sapiente, omnis error perferendis perspiciatis blanditiis vel porro quae maxime tenetur mollitia ipsam aspernatur incidunt praesentium commodi! Hic, provident optio.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site__footer">
+    <div class="container">
+      <div class="col">
+        <nav class="footer_nav">
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+        </nav>
+      </div>
+      <div class="col">
+        <p>@Copy</p>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
