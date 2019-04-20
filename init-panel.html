@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+
+    <header class="site__header">
+      <div class="notifications">
+        <button type="button" class="btn notifications__btn"><i class="icon-bell"><span class="sr-only">Notifications</span></i></button>
+        <span class="notifications__badge">6</span>
+        <!--<button type="button" class="btn notifications__btn"><i class="icon-bubble2"><span class="sr-only">Chat</span></i></button>-->
+      </div>
+      <div class="brand">
+        <a href="init-panel.html">Logo</a>
+      </div>
+      <div class="user-settings">
+        <img role="button" class="user-settings__img" src="http://lorempixel.com/30/30" alt="" id="btnDropdown" data-target="#dropdownMenu" aria-haspopup="true" aria-expanded="false" aria-label="dropdownMenu">
+          <div class="dropdown" id="dropdownMenu" aria-labelledby="dropdownMenu">
+            <a class="dropdown__item" href="#">Settings</a>
+            <a class="dropdown__item" href="#">Account</a>
+            <a class="dropdown__item" href="/index.html">Close</a>
+          </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="panel">
+        <div class="container">
+          <a href="map.html" class="btn panel__btn--init"><i class="icon-map"><span class="sr-only">Maps</span></i></a>
+          <!--<a href="#" class="btn panel__btn--init"><i class="icon-bell"><span class="sr-only">Notifications</span></i></a>          
+          <a href="#" class="btn panel__btn--init"><i class="icon-bubble2"><span class="sr-only">Chat</span></i></a>-->
+          <a href="user-list.html" class="btn panel__btn--init"><i class="icon-file-text"><span class="sr-only">Chat</span></i></a>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="js/dropdown.js"></script>
+</body>
+</html>

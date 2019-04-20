@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+
+    <header class="site__header">
+      <div class="notifications">
+        <button type="button" class="btn notifications__btn"><i class="icon-bell"><span class="sr-only">Notifications</span></i></button>
+        <!--<button type="button" class="btn notifications__btn"><i class="icon-bubble2"><span class="sr-only">Chat</span></i></button>-->
+      </div>
+      <div class="brand">
+        <a href="init-panel.html">Logo</a>
+      </div>
+      <div class="user-settings">
+        <img role="button" class="user-settings__img" src="http://lorempixel.com/30/30" alt="" id="btnDropdown" data-target="#dropdownMenu" aria-haspopup="true" aria-expanded="false" aria-label="dropdownMenu">
+          <div class="dropdown" id="dropdownMenu" aria-labelledby="dropdownMenu">
+            <a class="dropdown__item" href="#">Settings</a>
+            <a class="dropdown__item" href="#">Account</a>
+            <a class="dropdown__item" href="#">Close</a>
+          </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <div class="container">
+          <a role="button" href="init-panel.html"><i class="icon-arrow-left2"> <span>Back</span></i></a>
+          <ul class="tasks">
+            <li class="tasks__item task-item task-item--done">
+              <input class="task-item__check" type="checkbox">
+              <div class="task-item__info">
+                <p class="task-item__title title--done">Walk the dog</p>
+                <p class="task-item__date">Today</p>
+              </div>
+              <div class="task-item__status">
+                <p class="task-item__status--done">Asigned</p>
+              </div>
+              <a href="user-profile.html" class="task-item__link">
+                <img src="http://lorempixel.com/40/40" class="task-item__img">
+              </a>
+            </li>
+            <li class="tasks__item task-item task-item--warn">
+              <input class="w3-check task-item__check" type="checkbox">
+              <div class="task-item__info">
+                <span class="task-item__title">Run erren</span><br>
+                <span class="task-item__date">Today</span>
+              </div>
+              <div class="task-item__status">
+                <p class="task-item__status--undone">Rejected</p>
+              </div>    
+              <img src="http://lorempixel.com/40/40" class="task-item__img">
+            </li>
+            <li class="tasks__item task-item">
+              <input class="w3-check task-item__check" type="checkbox">
+              <div class="task-item__info">
+                <span class="task-item__title">Grosery Shopping</span><br>
+                <span class="task-item__date">Tomorrow</span>
+              </div>
+              <div class="task-item__status">
+                <p class="task-item__status--pending">Pending</p>
+              </div>
+              <img src="http://lorempixel.com/40/40" class="task-item__img">
+            </li>
+            <li class="tasks__item task-item">
+              <input class="w3-check task-item__check" type="checkbox">
+              <div class="task-item__info">
+                <span class="task-item__title">Pharamacy List</span><br>
+                <span class="task-item__date">24 / 3</span>
+              </div>
+              <div class="task-item__status">
+                <p class="task-item__status--pending">Pending</p>
+              </div>
+              <img src="http://lorempixel.com/40/40" class="task-item__img">
+            </li>
+            <li class="tasks__item task-item" id="btnDemo1">
+              <input class="w3-check task-item__check" type="checkbox">
+              <div class="task-item__info">
+                <span class="task-item__title">Walk the dog</span><br>
+                <span class="task-item__date">30 / 5</span>
+              </div>
+              <div class="task-item__status">
+                <p class="task-item__status--pending">Pending</p>
+              </div>
+              <img src="http://lorempixel.com/40/40" class="task-item__img">
+              <div class="task-item__description" id="Demo1">Make sure he walks at least 30min around the park. He is currently recovering from a paw lession.</div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="new-task" id="newTask">
+          <form class="form">
+            <button type="button" class="btn new-task--close" id="taskClose">&times;</button>
+            <div>
+              <label for="title" class="form__label">Task Title</label>
+              <input type="text" id="title" class="form__input">
+            </div>
+            <div>
+              <label for="description" class="form__label">Task Description</label>
+              <textarea id="description" cols="30" rows="10" class="form__textarea"></textarea>
+            </div>
+            <div>
+              <label for="date" class="form__label">Date</label>
+              <input type="date" id="date" class="form__date">
+            </div>
+            <div>
+              <button type="submit" class="btn new-task--btn">Add Task</button>
+            </div>
+          </form>
+        </div>
+
+        
+        <div class="assigned-task" id="assignedTask">
+          <button type="button" class="btn new-task--close" id="taskClose">&times;</button>
+          <ul class="map-list">
+            <li class="map-list__item map-lsit__item--done">
+              <a href="user-profile.html" class="map-list__item--link">
+                <img src="http://lorempixel.com/40/40" class="map-list__img">
+              </a>
+              <div class="map-list__info">
+                <p class="map-list__title map-list__title--done">Martin Router King</p>
+              </div>
+              <div class="map-list__status">
+                <p class="map-list__status--distance">200m</p>
+              </div>
+              <div class="map-list__btn">
+                <button type="button" class="btn">Assigned</button>
+              </div>
+            </li>
+            <li class="map-list__item map-lsit__item--done">
+              <a href="user-profile.html" class="map-list__item--link">
+                <img src="http://lorempixel.com/40/40" class="map-list__img">
+              </a>
+              <div class="map-list__info">
+                <p class="map-list__title">Peter Perterson</p>
+              </div>
+              <div class="map-list__status">
+                <p class="map-list__status--distance">1km</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="controls">
+          <button class="btn controls__btn controls--success" type="button" id="addTask"><i class="icon-plus"><span class="sr-only">Add New Task</span></i></button>
+          <button class="btn controls__btn" type="button" id="assigTask"><i class="icon-user-plus"><span class="sr-only">Asigned Task</span></i></button>
+          <button class="btn controls__btn" type="button"><i class="icon-pencil"><span class="sr-only">Edit Task</span></i></button>
+          <button class="btn controls__btn controls--warn" type="button"><i class="icon-bin"><span class="sr-only">Delete Task</span></i></button>
+        </div>
+      </div>
+    </main>
+<script type="text/javascript" src="js/task.js"></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
+<script>
+document.getElementById('btnDemo1').addEventListener("click", function(){
+  document.getElementById('Demo1').style.display = 'block';
+});
+</script>
+</body>
+</html>

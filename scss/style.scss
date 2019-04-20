@@ -1,1 +1,33 @@
-@import "../dist/css/reset.css";
+//core
+@import "../node_modules/reset-css/sass/reset";
+
+//Partials
+@import "partials/variables";
+@import "partials/fonts";
+
+//Componets
+@import "components/header";
+@import "components/brand";
+@import "components/login";
+@import "components/register";
+@import "components/buttons";
+@import "components/menu";
+@import "components/logs";
+@import "components/intro";
+@import "components/user-settings";
+@import "components/notifications";
+@import "components/dropdown";
+@import "components/controls";
+@import "components/footer";
+
+//Web Sections
+@import "components/method";
+@import "components/showcase";
+@import "components/init-panel";
+@import "components/user-profile";
+@import "components/user-list";
+@import "components/new-task";
+@import "components/assigned-task";
+@import "components/form";
+@import "components/map";
+@import "components/map-list";

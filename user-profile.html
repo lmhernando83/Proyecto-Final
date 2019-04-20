@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+
+    <header class="site__header">
+      <div class="notifications">
+        <button type="button" class="btn notifications__btn"><i class="icon-bell"><span class="sr-only">Notifications</span></i></button>
+        <!--<button type="button" class="btn notifications__btn"><i class="icon-bubble2"><span class="sr-only">Chat</span></i></button>-->
+      </div>
+      <div class="brand">
+        <a href="init-panel.html">Logo</a>
+      </div>
+      <div class="user-settings">
+        <img role="button" class="user-settings__img" src="http://lorempixel.com/30/30" alt="" id="btnDropdown" data-target="#dropdownMenu" aria-haspopup="true" aria-expanded="false" aria-label="dropdownMenu">
+          <div class="dropdown" id="dropdownMenu" aria-labelledby="dropdownMenu">
+            <a class="dropdown__item" href="#">Settings</a>
+            <a class="dropdown__item" href="#">Account</a>
+            <a class="dropdown__item" href="#">Close</a>
+          </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="user-profile">
+        <div class="container">
+          <a role="button" href="init-panel.html"><i class="icon-arrow-left2"> <span>Back</span></i></a>
+          <div class="user-profile__header">
+            <img class="user-profile__img" src="http://lorempixel.com/80/80" alt="">
+            <h2 class="user-profile__title">{{Name}}</h2>
+          </div>
+          <div class="user-profile__description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, amet quas. In enim impedit consequuntur sit eius quod quas numquam voluptas at veniam totam nulla officia, hic eveniet sunt reiciendis iure aperiam fugit aliquid quidem. Corporis doloremque molestiae quis odit, natus temporibus est at quasi inventore velit ad necessitatibus fuga tempora consectetur molestias delectus nesciunt placeat illum in atque non nisi? Nesciunt adipisci maxime esse reiciendis mollitia saepe repellat ipsum quas! Deleniti ratione quam corporis repudiandae expedita. Deserunt, dolor nulla possimus ex voluptatum quis eligendi maiores temporibus, obcaecati error ad laboriosam modi. Perspiciatis officia reiciendis eligendi cumque tempore obcaecati officiis autem sint cupiditate mollitia, blanditiis velit magni nam cum alias nisi molestiae voluptatum laborum et earum quisquam rerum deleniti error nesciunt? Non voluptate impedit accusamus distinctio. Excepturi rerum voluptatum libero ipsa illo quidem quae eligendi aperiam aliquid nemo iusto in quisquam, reiciendis minima minus perspiciatis, dignissimos obcaecati, distinctio doloremque dicta?</p>
+          </div>
+          <div class="user-profile__skills">
+            <ul>
+              <li>Animal Lover</li>
+              <li>Specialist on Ederlys</li>
+              <li>Good Mood person</li>
+              <li>Reliable person</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+<script>
+  document.getElementById('btnDropdown').addEventListener("click", function(){
+    //document.getElementById('dropdownMenu').Classtoogle = 'block';
+    document.getElementById('dropdownMenu').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
